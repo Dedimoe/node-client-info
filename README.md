@@ -40,3 +40,25 @@ app.get('/test', function(req, res){
 proxy_set_header  X-Real-IP  $remote_addr;
 ```
 
+4. Sample output :
+```
+log: conn_from_user_ip=xxx.xx.xxx.xxx
+log: conn_from_user_ip2=::ffff:xxx.x.x.x
+Headers: {"x-real-ip":"xxx.xx.xxx.xxx","host":"localhost:xxxx","connection":"close","content-length":"90","user-agent":"insomnia/2021.3.0","content-type":"application/json","accept":"*/*"}
+IP: "xxx.xx.xxx.xxx"
+Browser: insomnia/2021.3.0
+Language: undefined
+Country: ID
+Region: JK
+{
+  range: [ 1986229248, 1986230271 ],
+  country: 'ID',
+  region: 'JK',
+  eu: '0',
+  timezone: 'Asia/Jakarta',
+  city: 'Jakarta',
+  ll: [ -6.1741, 106.8296 ],
+  metro: 0,
+  area: 1
+}
+```
