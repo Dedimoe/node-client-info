@@ -1,5 +1,5 @@
 # node-client-info
-Node: client information
+Node: display client information with nodejs behind the nginx reverse-proxy 
 
 1. Install geoip-lite:
 ```
